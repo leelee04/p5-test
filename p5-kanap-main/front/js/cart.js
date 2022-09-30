@@ -154,7 +154,7 @@ function getTotals() {
   var myLength = elemsQtt.length,
     totalQtt = 0;
 
-  for (var i = 0; i < myLength; ++i) {
+  for (let i = 0; i < myLength; ++i) {
     totalQtt += elemsQtt[i].valueAsNumber;
   }
 
@@ -163,7 +163,7 @@ function getTotals() {
 
   // Récupération du prix total
   totalPrice = 0;
-  for (var i = 0; i < myLength; ++i) {
+  for (let i = 0; i < myLength; ++i) {
     totalPrice += (elemsQtt[i].valueAsNumber * productInLocalStorage[i].priceKanap);
   }
 
